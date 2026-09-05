@@ -5,8 +5,7 @@ class Solution:
         for i in x:
             if i-1 not in x:
                 l=1
-                while i+1 in x:
-                    i+=1
+                while i+l in x:
                     l+=1
 
                 ans=max(ans,l)
